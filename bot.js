@@ -10,7 +10,14 @@ const fs = require('fs');
 const gif = require("gif-search");
 const client = new Discord.Client({disableEveryone: true});
  
-const prefix = "3";
+client.on('ready', () => {
+    client.user.setGame('Type 3help','https://www.twitch.tv/RezfixServer');
+    console.log('---------------');
+    console.log('2play Online')
+    console.log('---------------')
+  });
+
+const prefix = "2";
 /////////////////////////
 ////////////////////////
  
@@ -303,7 +310,7 @@ function play(guild, song) {
  
  
 client.on('message', message => {
-   if (message.content === '!help') {
+   if (message.content === '3help') {
        let helpEmbed = new Discord.RichEmbed()
        .setTitle('**أوامر الميوزك...**')
        .setDescription('**برفكس البوت (!)**')
@@ -360,7 +367,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 client.on('ready',async () => {
 console.log("Starting..");
 let g = client.guilds.get("493237177170395155");
-let c = g.channels.get("510531391209996304");
+let c = g.channels.get("513071886335475712");
 if(c.type === 'voice') {
 c.join();
 setInterval(() => {
