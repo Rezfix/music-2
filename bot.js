@@ -13,11 +13,11 @@ const client = new Discord.Client({disableEveryone: true});
 client.on('ready', () => {
     client.user.setGame('Type 3help','https://www.twitch.tv/RezfixServer');
     console.log('---------------');
-    console.log('2play Online')
+    console.log('3play Online')
     console.log('---------------')
   });
 
-const prefix = "2";
+const prefix = "3";
 /////////////////////////
 ////////////////////////
  
