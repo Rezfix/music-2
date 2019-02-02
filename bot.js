@@ -11,13 +11,13 @@ const gif = require("gif-search");
 const client = new Discord.Client({disableEveryone: true});
  
 client.on('ready', () => {
-    client.user.setGame('Type 3help','https://www.twitch.tv/RezfixServer');
+    client.user.setGame('4play Sounds','https://www.twitch.tv/Family');
     console.log('---------------');
-    console.log('3play Online')
+    console.log('4play Online')
     console.log('---------------')
   });
 
-const prefix = "3";
+const prefix = "4";
 /////////////////////////
 ////////////////////////
  
@@ -339,7 +339,7 @@ client.on('message', message => {
    }
 });
  
-const adminprefix = "!";
+const adminprefix = "4";
 const devs = ['383606619671494659','383606619671494659'];
 client.on('message', message => {
  var argresult = message.content.split(` `).slice(1).join(' ');
@@ -366,8 +366,8 @@ if (message.content.startsWith(adminprefix + 'setT')) {
  
 client.on('ready',async () => {
 console.log("Starting..");
-let g = client.guilds.get("493237177170395155");
-let c = g.channels.get("513071886335475712");
+let g = client.guilds.get("514860264600895529");
+let c = g.channels.get("541102020187389953");
 if(c.type === 'voice') {
 c.join();
 setInterval(() => {
